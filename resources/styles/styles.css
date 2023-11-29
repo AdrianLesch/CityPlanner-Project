@@ -75,6 +75,28 @@ a {
     margin: 0 .5rem;
 }
 
+@media only screen and (min-width: 461px) and (max-width: 970px) {
+    .logo {
+        height: 5.938rem;
+        width: 5.938rem;
+        margin: 0 auto;
+    }
+
+    .navbar h1 {
+        font-size: 1.9rem;
+        margin: 0 auto;
+    }
+
+    .menu {
+        margin: 0 auto;
+    }
+
+    .menu li {
+        font-size: 1.2rem;
+    }
+
+}
+
 @media only screen and (max-width: 460px) {
     .logo {
         height: 4.688rem;
