@@ -79,10 +79,15 @@ a {
     .logo {
         height: 4.688rem;
         width: 4.688rem;
+        margin: 0 auto;
     }
 
     .navbar h1 {
         font-size: 1.5rem;
+    }
+
+    .menu {
+        margin: 0 auto;
     }
 
     .menu li {
