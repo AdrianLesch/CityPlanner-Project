@@ -1,0 +1,230 @@
+/*
+Styling colors: 
+    #FFFFFF -- White -- NavBar
+    #0e0f19 -- Rich Black -- Body
+    #466060 -- Feldgrau -- Container Background
+    #57886c -- Viridian -- Footer
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px
+}
+
+html {
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 320px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*----Header & Navbar----*/
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #0e0f19;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    background-color: white;
+}
+
+.navbar h1 {
+    font-size: 2.125rem;
+    margin-right: auto;
+    padding: .5rem;
+}
+
+.logo {
+    height: 9.375rem;
+    width: 9.375rem;
+}
+
+@media only screen and (max-width: 460px) {
+    .logo {
+        height: 4.688rem;
+        width: 4.688rem;
+    }
+}
+
+.menu {
+    display: flex;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    font-size: 1.4rem;
+    padding: .5rem;
+    margin: 0 .5rem;
+}
+
+/*----Banner----*/
+
+.banner {
+    background-image: url(../images/CityScapeBanner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    width: 100%;
+    height: 9.375rem;
+    position: relative;
+    margin-top: 9rem;
+}
+
+.foreground {
+    position: absolute;
+    background-color: #57886c;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 90%;
+    overflow: hidden;
+}
+
+.overlay {
+    text-align: center;
+    padding: 1rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: white;
+    line-height: 1.5;
+    opacity: 100%;
+}
+
+@media only screen and (max-width:1120px) {
+    .overlay {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width:962px) {
+    .overlay {
+        font-size: .8rem;
+        margin: 1.5rem auto;
+    }
+}
+
+@media only screen and (max-width:621px) {
+    .overlay {
+        display: none;
+    }
+}
+
+/*----Main----*/
+
+.headline {
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.flexContainer {
+    background-color: #0e0f19;
+    display: flex;
+    color: white;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.childContainer {
+    background-color: #466060;
+    display: flex;
+    text-align: center;
+    color: white;
+    margin: 1rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 300px;
+    border-radius: .5rem;
+}
+
+.childContainer img {
+    height: 400px;
+    max-width: 600px;
+    overflow: hidden;
+    border-radius: 0 0 .5rem .5rem;
+}
+
+.childContainer h4 {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+}
+
+.childContainer p {
+    margin: .5rem 1rem;
+    padding: 1rem;
+    line-height: 1.1;
+}
+
+/*----Footer----*/
+
+.flexFooter {
+    background-color: #57886c;
+    color: white;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 3rem;
+}
+
+@media only screen and (max-width:320px) {
+    .flexFooter {
+        overflow: hidden;
+    }
+}
+
+.location {
+    border: 1rem solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 2rem;
+    margin: 1rem;
+}
+
+.copyright {
+    display: flex;
+    justify-content: flex-start;
+    margin: .5rem;
+    font-size: 1rem;
+}
+
+.copyright a {
+    text-decoration: underline;
+    color: blue;
+}
